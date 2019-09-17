@@ -1,0 +1,32 @@
+
+<div class="container">
+    <h1>Personal Data Entry</h1>
+    <form [formGroup]="patientForm" (ngSubmit)="onSubmit()"   >
+      <div class="form-group">
+        <label for="name">Last Name</label>
+        <input type="text" formControlName = "lastName"  class="form-control" id="lastname" required>
+      </div>
+      <div class="form-group">
+        <label for="name">First Name</label>
+        <input type="text" formControlName = "firstName" class="form-control" id="firstname" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select class="form-control" id="gender" formControlName ="gender" required>
+          <option *ngFor="let gen of genders" [value]="gen">{{gen}}</option>
+        </select>
+      </div>
+ 
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" formControlName ="dob" class="form-control" id="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" formControlName = "email" class="form-control" id="email" required>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+ 
+    </form>
+</div>
