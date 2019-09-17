@@ -2,7 +2,7 @@ Minor project 2
 # Hey Dude 
 
 ## please first dowload or clone repository // it requires mongodb connection, 
-please just comment that block of code if your machine isn't installed mongodb
+please just comment that block of code if mongodb isn't installed on your machine
 
 npm init --npm install // i uploaded all node_modules npm start
 
