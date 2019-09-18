@@ -1,0 +1,61 @@
+<app-navigation-temp></app-navigation-temp>
+<div class="container">
+  <div class="header">
+    <div class="row">
+          <h1 class="blue">Doctor List</h1>
+      </div>
+      <div class="header-add">
+        <a routerLink="/registerDoctor" class="btn btn-success"><i class="fas fa-plus"></i></a>
+      </div>
+    </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>Phone Number</th>
+        <th>Email Address</th>
+        <th>Specialist In</th>
+        <th>Organization</th>
+        <th>Full Address</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let doctor of doctors; let i = index">
+        <td>{{ i + 1}}</td>
+        <td>{{ doctor.firstName }}</td>
+        <td>{{ doctor.lastName }}</td>
+        <td>{{ doctor.gender }}</td>
+        <td>{{ doctor.phoneNumber }}</td>
+        <td><div class="a">
+              {{ doctor.email }}
+            </div>
+        </td>
+          <td><div class="a">
+            {{ doctor.specialistId }}
+          </div>
+        </td>
+      <td><div class="a">
+        {{ doctor.organization.name }}
+      </div>
+    </td>
+    <td><div class="a">
+      {{ doctor.address }}
+    </div>
+  </td>
+        <td>
+          <div class="actions">
+            <span><a href="" class="btn btn-sm btn-outline-secondary"><i class="fas fa-pencil-alt"></i></a></span>
+            &nbsp;
+            <span><a (click)="deleteDoctor(doctor._id)"  class="btn btn-sm btn-outline-danger"><i class="fas fa-trash-alt"></i></a></span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

@@ -631,9 +631,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var ng2_file_upload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng2-file-upload */ "./node_modules/ng2-file-upload/index.js");
-/* harmony import */ var ng2_file_upload__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ng2_file_upload__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var ng2_file_upload__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng2-file-upload */ "./node_modules/ng2-file-upload/index.js");
+/* harmony import */ var ng2_file_upload__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(ng2_file_upload__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _services_util_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../services/util.service */ "./services/util.service.ts");
 /* harmony import */ var _services_blockchain_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../services/blockchain.service */ "./services/blockchain.service.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
@@ -658,7 +658,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _auth_auth_guard__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./auth/auth.guard */ "./src/app/auth/auth.guard.ts");
 /* harmony import */ var _auth_auth_interceptor__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./auth/auth.interceptor */ "./src/app/auth/auth.interceptor.ts");
 /* harmony import */ var _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./pages/dashboard/dashboard.component */ "./src/app/pages/dashboard/dashboard.component.ts");
-/* harmony import */ var _pages_doctor_upload_document_upload_document_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./pages/doctor/upload-document/upload-document.component */ "./src/app/pages/doctor/upload-document/upload-document.component.ts");
+/* harmony import */ var _pages_upload_document_upload_document_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./pages/upload-document/upload-document.component */ "./src/app/pages/upload-document/upload-document.component.ts");
 
 
 
@@ -746,7 +746,7 @@ var appRoutes = [
     },
     {
         path: 'uploadDocument',
-        component: _pages_doctor_upload_document_upload_document_component__WEBPACK_IMPORTED_MODULE_31__["UploadDocumentComponent"]
+        component: _pages_upload_document_upload_document_component__WEBPACK_IMPORTED_MODULE_31__["UploadDocumentComponent"]
     },
     { path: '',
         redirectTo: '/',
@@ -760,7 +760,7 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"],
-                ng2_file_upload__WEBPACK_IMPORTED_MODULE_6__["FileSelectDirective"],
+                ng2_file_upload__WEBPACK_IMPORTED_MODULE_5__["FileSelectDirective"],
                 _pages_transaction_list_transaction_list_component__WEBPACK_IMPORTED_MODULE_10__["TransactionListComponent"],
                 _pages_create_info_create_info_component__WEBPACK_IMPORTED_MODULE_11__["CreateInfoComponent"],
                 _pages_settings_settings_component__WEBPACK_IMPORTED_MODULE_12__["SettingsComponent"],
@@ -779,15 +779,14 @@ var AppModule = /** @class */ (function () {
                 _pages_doctor_list_doctor_list_doctor_component__WEBPACK_IMPORTED_MODULE_25__["ListDoctorComponent"],
                 _directives_alert_alert_component__WEBPACK_IMPORTED_MODULE_26__["AlertComponent"],
                 _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_30__["DashboardComponent"],
-                _pages_doctor_upload_document_upload_document_component__WEBPACK_IMPORTED_MODULE_31__["UploadDocumentComponent"]
+                _pages_upload_document_upload_document_component__WEBPACK_IMPORTED_MODULE_31__["UploadDocumentComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
-                ng2_file_upload__WEBPACK_IMPORTED_MODULE_6__["FileUploadModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
+                _angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
                 )
             ],
             providers: [{
@@ -907,7 +906,7 @@ var AuthInterceptor = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@import url(http://weloveiconfonts.com/api/?family=entypo);\n@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');\n@import url('//cdn.jsdelivr.net/bootstrap/3.1.1/css/bootstrap.min.css');\n@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900');\n/* entypo */\n[class*=\"entypo-\"]:before {\n  font-family: 'entypo', sans-serif;\n  font-style: initial;\n}\nbody {\n  font-family: 'Roboto';\n  padding: 0;\n  margin: 0;\n  background: #fff;\n}\n.cards {\n  margin-left: 0px;\n  margin-right: 0px;\n  .card {\n    padding: 0px;\n    margin: 0px;\n  }\n}\nsection.bubble {\n  background-color: #7ab986;\n  border-bottom: 2px solid #424956;\n  header {\n    text-transform: capitalize;\n    color: #fff;\n    font-weight: 100;\n    padding: 10px 10px 10px 10px;\n    font-size: 1.5em;\n    h4 {\n      color: #fff;\n      font-weight: 100;\n      font-size: 2em;\n      text-align: right;\n      margin: 0px;\n    }\n    ul {\n      list-style-type: none;\n      display: flex;\n      align-items: flex-start;\n      padding: 0PX;\n      margin: 0px;\n      justify-content: space-between;\n    }\n  }\n  article {\n    position: relative;\n    padding: 0px 10px 10px 10px;\n    .inlinebar {\n      opacity: 1;\n      canvas {\n        vertical-align: bottom !important;\n        zoom: 0.5;\n        max-width: 100%;\n      }\n    }\n    ul.sections {\n      display: flex;\n      list-style: none;\n      align-items: flex-end;\n      padding: 0px;\n      margin: 0px;\n      font-size: 1em;\n      li {\n        flex-grow: 1;\n      }\n      li.list {\n        color: #424956;\n        font-size: 1em;\n        ul {\n          list-style: none;\n          padding: 0px;\n          font-size: 1em;\n          li:first-child {\n            font-weight: bold;\n          }\n        }\n      }\n    }\n  }\n  footer {\n    padding: 10px 10px 10px 10px;\n    background-color: #f4f5f6;\n    color: #424956;\n    text-transform: uppercase;\n    font-weight: normal;\n    ul.sections {\n      padding: 0;\n      margin: 0;\n      display: flex;\n      align-items: center;\n      li {\n        list-style: none;\n        flex-grow: 1;\n        &:last-child {\n          text-align: right;\n        }\n        &.big-num {\n          color: #424956;\n          font-weight: 300;\n          font-size: 1.5em;\n          i{\n            &.up {\n              color: #70c030;\n            }\n            &.down {\n              color: #F16262;\n            }\n          }\n        }\n      }\n    }\n  }\n  &:after {\n    top: 100%;\n    left: 50%;\n    border: solid transparent;\n    content: \" \";\n    height: 0;\n    width: 0;\n    position: absolute;\n    pointer-events: none;\n    border-color: rgba(136, 183, 213, 0);\n    border-top-color: #424956;\n    border-width: 15px;\n    margin-left: -15px;\n  }\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMERBQTBEO0FBQzFELG9GQUFvRjtBQUNwRix1RUFBdUU7QUFDdkUsaUZBQWlGO0FBRWpGLFdBQVc7QUFDWDtFQUNFLGlDQUFpQztFQUNqQyxtQkFBbUI7QUFDckI7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixVQUFVO0VBQ1YsU0FBUztFQUNULGdCQUFnQjtBQUNsQjtBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQjtJQUNFLFlBQVk7SUFDWixXQUFXO0VBQ2I7QUFDRjtBQUdBO0VBQ0UseUJBQXlCO0VBQ3pCLGdDQUFnQztFQUNoQztJQUNFLDBCQUEwQjtJQUMxQixXQUFXO0lBQ1gsZ0JBQWdCO0lBQ2hCLDRCQUE0QjtJQUM1QixnQkFBZ0I7SUFDaEI7TUFDRSxXQUFXO01BQ1gsZ0JBQWdCO01BQ2hCLGNBQWM7TUFDZCxpQkFBaUI7TUFDakIsV0FBVztJQUNiO0lBQ0E7TUFDRSxxQkFBcUI7TUFDckIsYUFBYTtNQUNiLHVCQUF1QjtNQUN2QixZQUFZO01BQ1osV0FBVztNQUNYLDhCQUE4QjtJQUNoQztFQUNGO0VBQ0E7SUFDRSxrQkFBa0I7SUFDbEIsMkJBQTJCO0lBQzNCO01BQ0UsVUFBVTtNQUNWO1FBQ0UsaUNBQWlDO1FBQ2pDLFNBQVM7UUFDVCxlQUFlO01BQ2pCO0lBQ0Y7SUFDQTtNQUNFLGFBQWE7TUFDYixnQkFBZ0I7TUFDaEIscUJBQXFCO01BQ3JCLFlBQVk7TUFDWixXQUFXO01BQ1gsY0FBYztNQUNkO1FBQ0UsWUFBWTtNQUNkO01BQ0E7UUFDRSxjQUFjO1FBQ2QsY0FBYztRQUNkO1VBQ0UsZ0JBQWdCO1VBQ2hCLFlBQVk7VUFDWixjQUFjO1VBQ2Q7WUFDRSxpQkFBaUI7VUFDbkI7UUFDRjtNQUNGO0lBQ0Y7RUFDRjtFQUNBO0lBQ0UsNEJBQTRCO0lBQzVCLHlCQUF5QjtJQUN6QixjQUFjO0lBQ2QseUJBQXlCO0lBQ3pCLG1CQUFtQjtJQUNuQjtNQUNFLFVBQVU7TUFDVixTQUFTO01BQ1QsYUFBYTtNQUNiLG1CQUFtQjtNQUNuQjtRQUNFLGdCQUFnQjtRQUNoQixZQUFZO1FBQ1o7VUFDRSxpQkFBaUI7UUFDbkI7UUFDQTtVQUNFLGNBQWM7VUFDZCxnQkFBZ0I7VUFDaEIsZ0JBQWdCO1VBQ2hCO1lBQ0U7Y0FDRSxjQUFjO1lBQ2hCO1lBQ0E7Y0FDRSxjQUFjO1lBQ2hCO1VBQ0Y7UUFDRjtNQUNGO0lBQ0Y7RUFDRjtFQUNBO0lBQ0UsU0FBUztJQUNULFNBQVM7SUFDVCx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFNBQVM7SUFDVCxRQUFRO0lBQ1Isa0JBQWtCO0lBQ2xCLG9CQUFvQjtJQUNwQixvQ0FBb0M7SUFDcEMseUJBQXlCO0lBQ3pCLGtCQUFrQjtJQUNsQixrQkFBa0I7RUFDcEI7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoaHR0cDovL3dlbG92ZWljb25mb250cy5jb20vYXBpLz9mYW1pbHk9ZW50eXBvKTtcbkBpbXBvcnQgdXJsKCcvL25ldGRuYS5ib290c3RyYXBjZG4uY29tL2ZvbnQtYXdlc29tZS80LjAuMy9jc3MvZm9udC1hd2Vzb21lLm1pbi5jc3MnKTtcbkBpbXBvcnQgdXJsKCcvL2Nkbi5qc2RlbGl2ci5uZXQvYm9vdHN0cmFwLzMuMS4xL2Nzcy9ib290c3RyYXAubWluLmNzcycpO1xuQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Sb2JvdG86NDAwLDEwMCwzMDAsNzAwLDkwMCcpO1xuXG4vKiBlbnR5cG8gKi9cbltjbGFzcyo9XCJlbnR5cG8tXCJdOmJlZm9yZSB7XG4gIGZvbnQtZmFtaWx5OiAnZW50eXBvJywgc2Fucy1zZXJpZjtcbiAgZm9udC1zdHlsZTogaW5pdGlhbDtcbn1cblxuYm9keSB7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvJztcbiAgcGFkZGluZzogMDtcbiAgbWFyZ2luOiAwO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xufVxuXG4uY2FyZHMge1xuICBtYXJnaW4tbGVmdDogMHB4O1xuICBtYXJnaW4tcmlnaHQ6IDBweDtcbiAgLmNhcmQge1xuICAgIHBhZGRpbmc6IDBweDtcbiAgICBtYXJnaW46IDBweDtcbiAgfVxufVxuXG5cbnNlY3Rpb24uYnViYmxlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzdhYjk4NjtcbiAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkICM0MjQ5NTY7XG4gIGhlYWRlciB7XG4gICAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gICAgY29sb3I6ICNmZmY7XG4gICAgZm9udC13ZWlnaHQ6IDEwMDtcbiAgICBwYWRkaW5nOiAxMHB4IDEwcHggMTBweCAxMHB4O1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgaDQge1xuICAgICAgY29sb3I6ICNmZmY7XG4gICAgICBmb250LXdlaWdodDogMTAwO1xuICAgICAgZm9udC1zaXplOiAyZW07XG4gICAgICB0ZXh0LWFsaWduOiByaWdodDtcbiAgICAgIG1hcmdpbjogMHB4O1xuICAgIH1cbiAgICB1bCB7XG4gICAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG4gICAgICBwYWRkaW5nOiAwUFg7XG4gICAgICBtYXJnaW46IDBweDtcbiAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICB9XG4gIH1cbiAgYXJ0aWNsZSB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHBhZGRpbmc6IDBweCAxMHB4IDEwcHggMTBweDtcbiAgICAuaW5saW5lYmFyIHtcbiAgICAgIG9wYWNpdHk6IDE7XG4gICAgICBjYW52YXMge1xuICAgICAgICB2ZXJ0aWNhbC1hbGlnbjogYm90dG9tICFpbXBvcnRhbnQ7XG4gICAgICAgIHpvb206IDAuNTtcbiAgICAgICAgbWF4LXdpZHRoOiAxMDAlO1xuICAgICAgfVxuICAgIH1cbiAgICB1bC5zZWN0aW9ucyB7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICAgIGFsaWduLWl0ZW1zOiBmbGV4LWVuZDtcbiAgICAgIHBhZGRpbmc6IDBweDtcbiAgICAgIG1hcmdpbjogMHB4O1xuICAgICAgZm9udC1zaXplOiAxZW07XG4gICAgICBsaSB7XG4gICAgICAgIGZsZXgtZ3JvdzogMTtcbiAgICAgIH1cbiAgICAgIGxpLmxpc3Qge1xuICAgICAgICBjb2xvcjogIzQyNDk1NjtcbiAgICAgICAgZm9udC1zaXplOiAxZW07XG4gICAgICAgIHVsIHtcbiAgICAgICAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgICAgICAgIHBhZGRpbmc6IDBweDtcbiAgICAgICAgICBmb250LXNpemU6IDFlbTtcbiAgICAgICAgICBsaTpmaXJzdC1jaGlsZCB7XG4gICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbiAgZm9vdGVyIHtcbiAgICBwYWRkaW5nOiAxMHB4IDEwcHggMTBweCAxMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmNGY1ZjY7XG4gICAgY29sb3I6ICM0MjQ5NTY7XG4gICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgIHVsLnNlY3Rpb25zIHtcbiAgICAgIHBhZGRpbmc6IDA7XG4gICAgICBtYXJnaW46IDA7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgIGxpIHtcbiAgICAgICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICAgICAgZmxleC1ncm93OiAxO1xuICAgICAgICAmOmxhc3QtY2hpbGQge1xuICAgICAgICAgIHRleHQtYWxpZ246IHJpZ2h0O1xuICAgICAgICB9XG4gICAgICAgICYuYmlnLW51bSB7XG4gICAgICAgICAgY29sb3I6ICM0MjQ5NTY7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgICAgICAgICBmb250LXNpemU6IDEuNWVtO1xuICAgICAgICAgIGl7XG4gICAgICAgICAgICAmLnVwIHtcbiAgICAgICAgICAgICAgY29sb3I6ICM3MGMwMzA7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgICAmLmRvd24ge1xuICAgICAgICAgICAgICBjb2xvcjogI0YxNjI2MjtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbiAgJjphZnRlciB7XG4gICAgdG9wOiAxMDAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICBib3JkZXI6IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIGNvbnRlbnQ6IFwiIFwiO1xuICAgIGhlaWdodDogMDtcbiAgICB3aWR0aDogMDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gICAgYm9yZGVyLWNvbG9yOiByZ2JhKDEzNiwgMTgzLCAyMTMsIDApO1xuICAgIGJvcmRlci10b3AtY29sb3I6ICM0MjQ5NTY7XG4gICAgYm9yZGVyLXdpZHRoOiAxNXB4O1xuICAgIG1hcmdpbi1sZWZ0OiAtMTVweDtcbiAgfVxufVxuIl19 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -918,7 +917,7 @@ module.exports = "@import url(http://weloveiconfonts.com/api/?family=entypo);\n@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navigation-temp></app-navigation-temp>\n"
+module.exports = "\n<app-navigation-temp></app-navigation-temp>\n"
 
 /***/ }),
 
@@ -942,16 +941,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var HomeComponent = /** @class */ (function () {
     function HomeComponent(route, router, userService) {
-        var _this = this;
         this.route = route;
         this.router = router;
         this.userService = userService;
-        this.userService.getUserProfile().subscribe(function (res) {
-            _this.userDetails = res['user'];
-            console.log('user Details: ' + _this.userDetails);
-        }, function (err) {
-            console.log(err);
-        });
     }
     HomeComponent.prototype.ngOnInit = function () {
         this.userDetails = this.userService.selectedUser;
@@ -1195,7 +1187,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  dashboard works!\n</p>\n"
+module.exports = ""
 
 /***/ }),
 
@@ -1351,19 +1343,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../_services */ "./src/app/_services/index.ts");
-
 
 
 
 
 
 var RegisterDoctorComponent = /** @class */ (function () {
-    function RegisterDoctorComponent(formBuilder, router, http, userService) {
+    function RegisterDoctorComponent(formBuilder, router, http) {
         this.formBuilder = formBuilder;
         this.router = router;
         this.http = http;
-        this.userService = userService;
         this.loading = false;
         this.submitted = false;
         this.organizations = {};
@@ -1379,7 +1368,6 @@ var RegisterDoctorComponent = /** @class */ (function () {
             specialistId: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
             phoneNumber: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
             address: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
-            user: this.userService.selectedUser._id,
             organization: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required]
         });
         this.http.get("/org").subscribe(function (data) {
@@ -1423,77 +1411,9 @@ var RegisterDoctorComponent = /** @class */ (function () {
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"],
-            _services__WEBPACK_IMPORTED_MODULE_5__["UserService"]])
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]])
     ], RegisterDoctorComponent);
     return RegisterDoctorComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/pages/doctor/upload-document/upload-document.component.css":
-/*!****************************************************************************!*\
-  !*** ./src/app/pages/doctor/upload-document/upload-document.component.css ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2RvY3Rvci91cGxvYWQtZG9jdW1lbnQvdXBsb2FkLWRvY3VtZW50LmNvbXBvbmVudC5jc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/pages/doctor/upload-document/upload-document.component.html":
-/*!*****************************************************************************!*\
-  !*** ./src/app/pages/doctor/upload-document/upload-document.component.html ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<input type=\"file\" name=\"photo\" ng2FileSelect [uploader]=\"uploader\" />\n\n<button type=\"button\" class=\"btn btn-success btn-s\"\n  (click)=\"uploader.uploadAll()\"\n  [disabled]=\"!uploader.getNotUploadedItems().length\" >\n      Upload an Image\n</button>\n"
-
-/***/ }),
-
-/***/ "./src/app/pages/doctor/upload-document/upload-document.component.ts":
-/*!***************************************************************************!*\
-  !*** ./src/app/pages/doctor/upload-document/upload-document.component.ts ***!
-  \***************************************************************************/
-/*! exports provided: UploadDocumentComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UploadDocumentComponent", function() { return UploadDocumentComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var ng2_file_upload_ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng2-file-upload/ng2-file-upload */ "./node_modules/ng2-file-upload/ng2-file-upload.js");
-/* harmony import */ var ng2_file_upload_ng2_file_upload__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ng2_file_upload_ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-var UploadURL = 'http://localhost:3000/api/upload';
-var UploadDocumentComponent = /** @class */ (function () {
-    function UploadDocumentComponent() {
-        this.fileData = null;
-        this.uploader = new ng2_file_upload_ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__["FileUploader"]({ url: UploadURL, itemAlias: 'photo' });
-    }
-    UploadDocumentComponent.prototype.ngOnInit = function () {
-        this.uploader.onAfterAddingFile = function (file) { file.withCredentials = false; };
-        this.uploader.onCompleteItem = function (item, response, status, headers) {
-            console.log('FileUpload:uploaded:', item, status, response);
-            alert('File uploaded successfully');
-        };
-    };
-    UploadDocumentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-upload-document',
-            template: __webpack_require__(/*! ./upload-document.component.html */ "./src/app/pages/doctor/upload-document/upload-document.component.html"),
-            styles: [__webpack_require__(/*! ./upload-document.component.css */ "./src/app/pages/doctor/upload-document/upload-document.component.css")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], UploadDocumentComponent);
-    return UploadDocumentComponent;
 }());
 
 
@@ -1916,6 +1836,8 @@ var SignupComponent = /** @class */ (function () {
         }
     }
     SignupComponent.prototype.ngOnInit = function () {
+        if (this.userService.isLoggedIn())
+            this.router.navigateByUrl('/home');
         this.registerForm = this.formBuilder.group({
             firstName: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
             lastName: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
@@ -2019,6 +1941,72 @@ var TransactionListComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], TransactionListComponent);
     return TransactionListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/upload-document/upload-document.component.css":
+/*!*********************************************************************!*\
+  !*** ./src/app/pages/upload-document/upload-document.component.css ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3VwbG9hZC1kb2N1bWVudC91cGxvYWQtZG9jdW1lbnQuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/upload-document/upload-document.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/pages/upload-document/upload-document.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<input type=\"file\" name=\"photo\" ng2FileSelect [uploader]=\"uploader\" />\n\n<button type=\"button\" class=\"btn btn-success btn-s\"\n  (click)=\"uploader.uploadAll()\"\n  [disabled]=\"!uploader.getNotUploadedItems().length\" >\n      Upload an Image\n</button>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/upload-document/upload-document.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/pages/upload-document/upload-document.component.ts ***!
+  \********************************************************************/
+/*! exports provided: UploadDocumentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UploadDocumentComponent", function() { return UploadDocumentComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var ng2_file_upload_ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng2-file-upload/ng2-file-upload */ "./node_modules/ng2-file-upload/ng2-file-upload.js");
+/* harmony import */ var ng2_file_upload_ng2_file_upload__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ng2_file_upload_ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+var UploadURL = 'http://localhost:3000/api/upload';
+var UploadDocumentComponent = /** @class */ (function () {
+    function UploadDocumentComponent() {
+        this.uploader = new ng2_file_upload_ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__["FileUploader"]({ url: UploadURL, itemAlias: 'photo' });
+    }
+    UploadDocumentComponent.prototype.ngOnInit = function () {
+        this.uploader.onAfterAddingFile = function (file) { file.withCredentials = false; };
+        this.uploader.onCompleteItem = function (item, response, status, headers) {
+            console.log('FileUpload:uploaded:', item, status, response);
+            alert('File uploaded successfully');
+        };
+    };
+    UploadDocumentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-upload-document',
+            template: __webpack_require__(/*! ./upload-document.component.html */ "./src/app/pages/upload-document/upload-document.component.html"),
+            styles: [__webpack_require__(/*! ./upload-document.component.css */ "./src/app/pages/upload-document/upload-document.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], UploadDocumentComponent);
+    return UploadDocumentComponent;
 }());
 
 
@@ -2393,8 +2381,7 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 var environment = {
-    production: false,
-    server_url: 'http://localhost:3000'
+    production: false
 };
 /*
  * For easier debugging in development mode, you can import the following file
@@ -2441,7 +2428,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/Ichain/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/ichain/Ichain/src/main.ts */"./src/main.ts");
 
 
 /***/ }),

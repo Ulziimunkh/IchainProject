@@ -1,0 +1,14 @@
+{
+  "development": {
+      "PORT": 3000,
+      "MONGODB_URI": "mongodb://127.0.0.1:27017/bpds",
+      "JWT_SECRET": "SECRET#123",
+      "JWT_EXP": "10m"
+  },
+  "production": {
+      "PORT": 80,
+      "MONGODB_URI": "mongodb://xxxxx/DB_Name",
+      "JWT_SECRET": "SECRET#123",
+      "JWT_EXP": "2m"
+  }
+}

@@ -1,0 +1,10 @@
+div.a {
+    white-space: nowrap; 
+    width: 100px; 
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+  div.a:hover {
+    overflow: visible;
+    word-wrap: break-word;
+  }

@@ -1,0 +1,53 @@
+<app-navigation-temp></app-navigation-temp>
+<div class="container">
+<div class="header">
+  <div class="title">
+      <i class="fas fa-hospital-alt fa-2x"></i>
+      <span class="nav-text">
+          <h1 class="blue">Organization List</h1>
+        </span>
+
+  </div>
+  <div class="header-add">
+    <a routerLink="/orgEntry" class="btn btn-success"><i class="fas fa-plus"></i></a>
+  </div>
+</div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Org Id</th>
+        <th>Org Name</th>
+        <th>Nationality</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Contact Number</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let org of orgs; let i = index">
+        <td>{{ i + 1}}</td>
+        <td>{{ org.orgId }}</td>
+        <td>{{ org.name }}</td>
+        <td>{{ org.nationality }}</td>
+        <td>{{ org.email }}</td>
+        <td>{{ org.address }}</td>
+          <td>{{ org.contactNumber }}</td>
+        <td>
+          <div class="actions">
+            <span><a href="" class="btn btn-sm btn-outline-secondary"><i class="fas fa-pencil-alt"></i></a></span>
+            &nbsp;
+            <span><a (click)="deleteOrg(org._id)"  class="btn btn-sm btn-outline-danger"><i class="fas fa-trash-alt"></i></a></span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+</div>

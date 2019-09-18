@@ -7006,8 +7006,8 @@ for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/Ichain/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js");
-module.exports = __webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/Ichain/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js");
+__webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/ichain/Ichain/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js");
+module.exports = __webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/ichain/Ichain/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js");
 
 
 /***/ })

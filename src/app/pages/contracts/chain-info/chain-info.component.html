@@ -1,0 +1,89 @@
+<app-navigation-temp></app-navigation-temp>
+<div class="container">
+  <div id="user-profile-2" class="user-profile">
+    <div id="home" class="tab-pane in active">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 center">
+          <span class="profile-picture">
+            <img class="editable img-responsive" alt=" Avatar" id="avatar2" src="assets/img/avatar6.png">
+          </span>
+
+          <div class="space space-4"></div>
+
+        </div><!-- /.col -->
+
+        <div class="col-xs-12 col-sm-9">
+          <h4 class="blue">
+            <span class="middle">{{patient?.firstName}} {{patient?.lastName}}</span>
+
+          </h4>
+
+          <div class="profile-user-info">
+            <div class="profile-info-row">
+              <div class="profile-info-name"> Account</div>
+
+              <div class="profile-info-value">
+                <span>{{patient?.account}}</span>
+              </div>
+            </div>
+            <div class="profile-info-row">
+              <div class="profile-info-name"> Date of Birth </div>
+
+              <div class="profile-info-value">
+                <span>{{patient?.dob}}</span>
+              </div>
+            </div>
+            <div class="profile-info-row">
+              <div class="profile-info-name"> Gender </div>
+
+              <div class="profile-info-value">
+                <span>{{patient?.gender}}</span>
+              </div>
+            </div>
+
+            <div class="profile-info-row">
+              <div class="profile-info-name"> Email </div>
+
+              <div class="profile-info-value">
+                <span>{{patient?.email}}</span>
+              </div>
+            </div>
+
+            <div class="profile-info-row">
+              <div class="profile-info-name"> Phone </div>
+
+              <div class="profile-info-value">
+                <span>{{patient?.phoneNumber}}</span>
+              </div>
+            </div>
+
+            <div class="profile-info-row">
+              <div class="profile-info-name"> Address </div>
+
+              <div class="profile-info-value">
+
+                <i class="fa fa-map-marker light-orange bigger-110"></i>
+                <span>{{patient?.address}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hr hr-8 dotted"></div>
+
+
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+
+      <div class="space-20"></div>
+
+    </div><!-- /#home -->
+    <div class="footer">
+      <br>
+      <button routerLink="/data-entry" class="btn btn-secondary">
+        Modify Data
+        <span class="badge badge-light"></span>
+      </button>
+    </div>
+  </div>
+  
+</div>

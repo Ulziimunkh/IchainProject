@@ -1,0 +1,14 @@
+.box-org {
+  margin: 10px 15px;
+  padding: 8px;
+  border: 1px #ccc solid;
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+.form-org {
+  padding: 20px;
+}
+.form-org input[type="text"] {
+  padding: 8px;
+  width: 100%;
+}

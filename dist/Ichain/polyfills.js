@@ -5816,8 +5816,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/Ichain/src/polyfills.ts */"./src/polyfills.ts");
-module.exports = __webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/Ichain/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
+__webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/ichain/Ichain/src/polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! /media/ulziimunkh/fac72731-2c44-4979-88b2-1f1d52d09764/ulziimunkh/nodejs/blockchain/ichain/Ichain/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
 
 
 /***/ })
